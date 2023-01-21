@@ -50,3 +50,10 @@ This final element in the JSON reassures whatever is reading it that everything 
 Now you understand how to make a request to Google's maps and return directions. These directions have many elements embedded, including IDs of the various stops, lines representing the map, the bounding box for the results and details about each "turn by turn" called a leg. 
 ### Create your own directions request
 Modify the URL to go from a place you know to another place you know and add in appropriate and novel parameters from the various available in the Directions API. Explore your results using the http://jsonviewer.stack.hu/ tool. In this repository modify the MarkDown file [mydirections.md](mydirections.md) to document your working URL with valid API Key, and the full JSON response from that URL. 
+
+# Task 
+
+## Working URL with valid API
+
+
+## full JSON response from the URL 
