@@ -1,6 +1,7 @@
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 3,
+    zoom: 5,
+    // using a zoom of 5 to focus in on Ontario more instead of a zoom of 3
     center: { lat: 51.254, lng: -85.323 },
   });
   // Create an array of alphabetical characters used to label the markers.
