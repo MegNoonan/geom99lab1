@@ -26,34 +26,34 @@ function initMap() {
   var infoWindowContent =[
     ['<div id="info_content">' +
     '<h1>Dingle, Ireland</h1>' +
-    '<h3> Length of Stay: 4 days' </h3>+
+    '<h3> Length of Stay: 1 1/2 weeks </h3>'+
     '<div id="bodyContent">' +
     '<p> My favourite part of travelling in Ireland was this little bar we went to near Killarney. We played pool with the local colleges engineering' +
       ' students and learned a lot about the country. There was a dog named Molly that would sit right at the bar. </p>'+
     '</div>'],
            ['<div id="info_content">' +
     '<h1>Inverness, Scotland</h1>' +
-    '<h3> Length of Stay: 4 days' </h3>+
+    '<h3> Length of Stay: 3 days </h3>'+
     '<div id="bodyContent">' +
     '<p> The Giants Causeway hike was the highlight of Northern Ireland. Not only was the trip getting there an adventure involving incredible people' +
             ' helping us figure out the train system and offering us rides to our hostel in BallyCastle, but the hike itself to the Giants Causeway was incredible </p>'+
     '</div>'],
     ['<div id="info_content">' +
     '<h1>Inverness, Scotland</h1>' +
-    '<h3> Length of Stay: 4 days' </h3>+
+    '<h3> Length of Stay: 1 week </h3>'+
     '<div id="bodyContent">' +
     '<p> The hike around Loch Ness was the longest hike of this trip and completed in the pouring rain. Although we were miserable to the end, we thoroughly enjoyed the' +
      ' experience. We did not see Nessie.. </p>'+
     '</div>'],
            ['<div id="info_content">' +
     '<h1>London, England</h1>' +
-    '<h3> Length of Stay: 4 days' </h3>+
+    '<h3> Length of Stay: 1 week </h3>'+
     '<div id="bodyContent">' +
     '<p> Meeting my extended family for the first time was the main highlight from this part of our trip but a close second was seeing Come From Away in the theater. Increbile. </p>'+
     '</div>'],
            ['<div id="info_content">' +
     '<h1>Brugge, Belgium</h1>' +
-    '<h3> Length of Stay: 4 days' </h3>+
+    '<h3> Length of Stay: 4 days </h3>'+
     '<div id="bodyContent">' +
     '<p> The city is gorgeous with the old cobble stone roads and canals. No trip to Brugge is complete without getting frites and waffles! </p>'+
     '</div>']
