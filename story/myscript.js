@@ -1,14 +1,10 @@
 // Based on the info windows with a max width template 
-function initMap(): void {
+function initMap() {
   const uluru = { lat: -25.363, lng: 131.044 };
-  const map = new google.maps.Map(
-    document.getElementById("map") as HTMLElement,
-    {
-      zoom: 4,
-      center: uluru,
-    }
-  );
-
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
   const contentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
@@ -30,13 +26,10 @@ function initMap(): void {
     "(last visited June 22, 2009).</p>" +
     "</div>" +
     "</div>";
-
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
-    maxWidth: 200,
     ariaLabel: "Uluru",
   });
-
   const marker = new google.maps.Marker({
     position: uluru,
     map,
@@ -51,10 +44,4 @@ function initMap(): void {
   });
 }
 
-declare global {
-  interface Window {
-    initMap: () => void;
-  }
-}
 window.initMap = initMap;
-// [END maps_infowindow_simple_max]
