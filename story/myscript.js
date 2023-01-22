@@ -2,26 +2,32 @@
 // Multiple markers modified from https://www.codexworld.com/google-maps-with-multiple-markers-using-javascript-api/
 
 function initMap() {
-  
+     var map;
+    var bounds = new google.maps.LatLngBounds();
+    var mapOptions = {
+        mapTypeId: 'roadmap'
+    };
+   map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                             
   //const ireland = { lat: 53.316, lng: -7.698 };
-  var bounds = new google.maps.LatLngBounds();
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 3,
-     mapTypeId: google.maps.MapTypeId.TERRAIN
-  });
+  //var bounds = new google.maps.LatLngBounds();
+  //var map = new google.maps.Map(document.getElementById("map"), {
+    //zoom: 3,
+     //mapTypeId: google.maps.MapTypeId.TERRAIN
+  
   var markers = [
     ['Dingle, Ireland', 53.316, -7.698],
     ['Inverness, Scotland', 57.456, -4.221]];
   
   var infoWindowContent =
-    ['<div id="content">' +
+    ['<div id="info_content">' +
     '<h1>Dingle, Ireland</h1>' +
     '<h3> Travel Dates: August 23 to December 29' +
     '<div id="bodyContent">' +
     '<p> My favourite part of travelling in Ireland was this little bar we went to near Killarney. We played pool with the local colleges engineering' +
       ' students and learned a lot about the country. There was a dog named Molly that would sit right at the bar. </p>'+
     '</div>'],
-        ['<div id="content">' +
+    ['<div id="info_content">' +
     '<h1>Inverness, Scotland</h1>' +
     '<h3> Travel Dates: August 23 to December 29' +
     '<div id="bodyContent">' +
@@ -57,7 +63,7 @@ function initMap() {
 
     // Set zoom level
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-        this.setZoom(14);
+        this.setZoom(3);
         google.maps.event.removeListener(boundsListener);
     });
 }
