@@ -5,7 +5,7 @@ function initMap() {
      var map;
     var bounds = new google.maps.LatLngBounds();
     var mapOptions = {
-        mapTypeId: 'roadmap'
+        mapTypeId: google.maps.MapTypeId.TERRAIN
     };
    map = new google.maps.Map(document.getElementById("map"), mapOptions);
                              
@@ -17,22 +17,45 @@ function initMap() {
   
   var markers = [
     ['Dingle, Ireland', 53.316, -7.698],
-    ['Inverness, Scotland', 57.456, -4.221]];
+       ['Giants Causeway, Northern Ireland', 55.233, -6.526],
+    ['Inverness, Scotland', 57.456, -4.221],
+       ['London, England', 51.493, -0.113],
+       ['Brugge, Belgium', 51.198, 3.209],
+  ];
   
   var infoWindowContent =[
     ['<div id="info_content">' +
     '<h1>Dingle, Ireland</h1>' +
-    '<h3> Travel Dates: August 23 to December 29' +
+    '<h3> Length of Stay: 4 days' </h3>+
     '<div id="bodyContent">' +
     '<p> My favourite part of travelling in Ireland was this little bar we went to near Killarney. We played pool with the local colleges engineering' +
       ' students and learned a lot about the country. There was a dog named Molly that would sit right at the bar. </p>'+
     '</div>'],
+           ['<div id="info_content">' +
+    '<h1>Inverness, Scotland</h1>' +
+    '<h3> Length of Stay: 4 days' </h3>+
+    '<div id="bodyContent">' +
+    '<p> The Giants Causeway hike was the highlight of Northern Ireland. Not only was the trip getting there an adventure involving incredible people' +
+            ' helping us figure out the train system and offering us rides to our hostel in BallyCastle, but the hike itself to the Giants Causeway was incredible </p>'+
+    '</div>'],
     ['<div id="info_content">' +
     '<h1>Inverness, Scotland</h1>' +
-    '<h3> Travel Dates: August 23 to December 29' +
+    '<h3> Length of Stay: 4 days' </h3>+
     '<div id="bodyContent">' +
-    '<p> My favourite part of travelling in Ireland was this little bar we went to near Killarney. We played pool with the local colleges engineering' +
-      ' students and learned a lot about the country. There was a dog named Molly that would sit right at the bar. </p>'+
+    '<p> The hike around Loch Ness was the longest hike of this trip and completed in the pouring rain. Although we were miserable to the end, we thoroughly enjoyed the' +
+     ' experience. We did not see Nessie.. </p>'+
+    '</div>'],
+           ['<div id="info_content">' +
+    '<h1>London, England</h1>' +
+    '<h3> Length of Stay: 4 days' </h3>+
+    '<div id="bodyContent">' +
+    '<p> Meeting my extended family for the first time was the main highlight from this part of our trip but a close second was seeing Come From Away in the theater. Increbile. </p>'+
+    '</div>'],
+           ['<div id="info_content">' +
+    '<h1>Brugge, Belgium</h1>' +
+    '<h3> Length of Stay: 4 days' </h3>+
+    '<div id="bodyContent">' +
+    '<p> The city is gorgeous with the old cobble stone roads and canals. No trip to Brugge is complete without getting frites and waffles! </p>'+
     '</div>']
   ];
   
