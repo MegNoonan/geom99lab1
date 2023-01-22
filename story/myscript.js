@@ -1,8 +1,8 @@
 // Based on the info windows with a max width template 
 function initMap() {
-  const uluru = { lat: -25.363, lng: 131.044 };
+  const uluru = { lat: 38.554, lng: 48.901 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
+    zoom: 2,
     center: uluru,
   });
   const contentString =
