@@ -69,8 +69,7 @@ function initMap() {
         marker = new google.maps.Marker({
             position: position,
             map: map,
-            title: markers[i][0],
-             const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            title: markers[i][0]
         });
       
 // Add info window to marker    
