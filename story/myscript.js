@@ -1,5 +1,7 @@
 // Based on the info windows with a max width template 
 // Multiple markers modified from https://www.codexworld.com/google-maps-with-multiple-markers-using-javascript-api/
+const labels = "12345";
+let labelIndex = 0;
 
 function initMap() {
      var map;
@@ -69,7 +71,9 @@ function initMap() {
         marker = new google.maps.Marker({
             position: position,
             map: map,
-            title: markers[i][0]
+            title: markers[i][0],
+             // trying to add labels to show the order the places were visited
+             label: labels[labelIndex++ % labels.length]
         });
       
 // Add info window to marker    
