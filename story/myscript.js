@@ -5,7 +5,7 @@ function initMap() {
      var map;
     var bounds = new google.maps.LatLngBounds();
     var mapOptions = {
-        mapTypeId: google.maps.MapTypeId.TERRAIN
+        mapTypeId: 'terrian'
     };
    map = new google.maps.Map(document.getElementById("map"), mapOptions);
                              
@@ -20,7 +20,7 @@ function initMap() {
        ['Giants Causeway, Northern Ireland', 55.233, -6.526],
     ['Inverness, Scotland', 57.456, -4.221],
        ['London, England', 51.493, -0.113],
-       ['Brugge, Belgium', 51.198, 3.209],
+       ['Brugge, Belgium', 51.198, 3.209]
   ];
   
   var infoWindowContent =[
