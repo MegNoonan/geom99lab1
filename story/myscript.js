@@ -5,7 +5,7 @@ function initMap() {
      var map;
     var bounds = new google.maps.LatLngBounds();
     var mapOptions = {
-        mapTypeId: 'satellite'
+        mapTypeId: 'hybrid'
     };
    map = new google.maps.Map(document.getElementById("map"), mapOptions);
                              
@@ -32,7 +32,7 @@ function initMap() {
       ' students and learned a lot about the country. There was a dog named Molly that would sit right at the bar. </p>'+
     '</div>'],
            ['<div id="info_content">' +
-    '<h1>Inverness, Scotland</h1>' +
+    '<h1>Giants Causeway, Northern Ireland</h1>' +
     '<h3> Length of Stay: 3 days </h3>'+
     '<div id="bodyContent">' +
     '<p> The Giants Causeway hike was the highlight of Northern Ireland. Not only was the trip getting there an adventure involving incredible people' +
@@ -69,7 +69,8 @@ function initMap() {
         marker = new google.maps.Marker({
             position: position,
             map: map,
-            title: markers[i][0]
+            title: markers[i][0],
+             const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         });
       
 // Add info window to marker    
