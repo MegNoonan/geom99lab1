@@ -5,7 +5,7 @@ function initMap() {
      var map;
     var bounds = new google.maps.LatLngBounds();
     var mapOptions = {
-        mapTypeId: 'roadmap'
+        mapTypeId: 'satellite'
     };
    map = new google.maps.Map(document.getElementById("map"), mapOptions);
                              
