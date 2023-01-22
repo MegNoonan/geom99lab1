@@ -1,17 +1,17 @@
 // Based on the info windows with a max width template 
 function initMap() {
-  const uluru = { lat: 38.554, lng: 48.901 };
+  const ireland = { lat: 53.316, lng: -7.698 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 2,
-    center: uluru,
+    zoom: 3,
+    center: ireland,
   });
   const contentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+    '<h1 id="firstHeading" class="firstHeading">Ireland</h1>' +
     '<div id="bodyContent">' +
-    "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
+    "<p><b>Ireland</b>, also referred to as <b>Ayers Rock</b>, is a large " +
     "sandstone rock formation in the southern part of the " +
     "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
     "south west of the nearest large town, Alice Springs; 450&#160;km " +
@@ -21,19 +21,16 @@ function initMap() {
     "Aboriginal people of the area. It has many springs, waterholes, " +
     "rock caves and ancient paintings. Uluru is listed as a World " +
     "Heritage Site.</p>" +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-    "(last visited June 22, 2009).</p>" +
     "</div>" +
     "</div>";
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
-    ariaLabel: "Uluru",
+    ariaLabel: "Ireland",
   });
   const marker = new google.maps.Marker({
-    position: uluru,
+    position: ireland,
     map,
-    title: "Uluru (Ayers Rock)",
+    title: "Ireland (Ayers Rock)",
   });
 
   marker.addListener("click", () => {
