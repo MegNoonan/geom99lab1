@@ -19,7 +19,7 @@ function initMap() {
     ['Dingle, Ireland', 53.316, -7.698],
     ['Inverness, Scotland', 57.456, -4.221]];
   
-  var infoWindowContent =
+  var infoWindowContent =[
     ['<div id="info_content">' +
     '<h1>Dingle, Ireland</h1>' +
     '<h3> Travel Dates: August 23 to December 29' +
