@@ -4,6 +4,7 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 3,
     center: ireland,
+     mapTypeId: google.maps.MapTypeId.TERRAIN
   });
   const contentString =
     '<div id="content">' +
