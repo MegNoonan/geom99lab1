@@ -7,12 +7,11 @@ function initMap() {
   var bounds = new google.maps.LatLngBounds();
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 3,
-    center: ireland,
      mapTypeId: google.maps.MapTypeId.TERRAIN
   });
   var markers = [
     ['Dingle, Ireland', 53.316, -7.698],
-    ['Inverness, Scotland', 57.456, -4.221]]
+    ['Inverness, Scotland', 57.456, -4.221]];
   
   var infoWindowContent =
     ['<div id="content">' +
