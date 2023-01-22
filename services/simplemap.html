@@ -2,6 +2,10 @@
 <!-- source: https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-html -->
 <!-- STUDENTS: Modify this file to provided the Google API key to get it working, 
                then modify the lat and lng and zoom to point to a place you know  -->
+
+<!-- Place chosen: Giants Causeway in Northern Ireland. Fantastic hike even though it ends in a touristy area. 
+Zoom 14 to ensure the Causeway label can be easily viewed as its the main focus--> 
+
 <html>
   <head>
     <title>Simple Map</title>
@@ -27,7 +31,7 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 55.241, lng: -6.512 },
-          zoom: 13,
+          zoom: 14,
         });
       }
     </script>
