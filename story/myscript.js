@@ -11,7 +11,7 @@ function initMap() {
     };
    map = new google.maps.Map(document.getElementById("map"), mapOptions);
     
-     // Adding some hiking trail polylines 
+     // Adding the polyline for my favourite hiking trail during the trip
        const favouriteHikeCoordinates = [
 {lat: 57.145854, lng: -4.675464},
 {lat: 57.137485, lng: -4.668029},
@@ -41,16 +41,12 @@ function initMap() {
 
   hikePath.setMap(map);
      
-  //const ireland = { lat: 53.316, lng: -7.698 };
-  //var bounds = new google.maps.LatLngBounds();
-  //var map = new google.maps.Map(document.getElementById("map"), {
-    //zoom: 3,
-     //mapTypeId: google.maps.MapTypeId.TERRAIN
+
   
   var markers = [
     ['Dingle, Ireland', 53.316, -7.698],
        ['Giants Causeway, Northern Ireland', 55.233, -6.526],
-    ['Loch Ness, Scotland', 57.456, -4.221],
+    ['Loch Ness, Scotland', 57.032, -4.494],
        ['London, England', 51.493, -0.113],
        ['Brugge, Belgium', 51.198, 3.209]
   ];
