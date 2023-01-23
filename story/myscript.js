@@ -46,7 +46,7 @@ function initMap() {
   var markers = [
     ['Dingle, Ireland', 53.316, -7.698],
        ['Giants Causeway, Northern Ireland', 55.233, -6.526],
-    ['Loch Ness, Scotland', 57.032, -4.494],
+    ['Loch Ness, Scotland', 57.302, -4.494],
        ['London, England', 51.493, -0.113],
        ['Brugge, Belgium', 51.198, 3.209]
   ];
