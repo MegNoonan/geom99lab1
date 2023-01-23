@@ -13,7 +13,6 @@ function initMap() {
     
      // Adding some hiking trail polylines 
        const favouriteHikeCoordinates = [
-{lat: 57.257436, lng: -4.484129},
 {lat: 57.145854, lng: -4.675464},
 {lat: 57.137485, lng: -4.668029},
 {lat: 57.144918, lng: -4.648968},
@@ -51,7 +50,7 @@ function initMap() {
   var markers = [
     ['Dingle, Ireland', 53.316, -7.698],
        ['Giants Causeway, Northern Ireland', 55.233, -6.526],
-    ['Inverness, Scotland', 57.456, -4.221],
+    ['Loch Ness, Scotland', 57.456, -4.221],
        ['London, England', 51.493, -0.113],
        ['Brugge, Belgium', 51.198, 3.209]
   ];
@@ -72,10 +71,10 @@ function initMap() {
             ' helping us figure out the train system and offering us rides to our hostel in BallyCastle, but the hike itself to the Giants Causeway was incredible </p>'+
     '</div>'],
     ['<div id="info_content">' +
-    '<h1>Inverness, Scotland</h1>' +
+    '<h1>Loch Ness, Scotland</h1>' +
     '<h3> Length of Stay: 1 week </h3>'+
     '<div id="bodyContent">' +
-    '<p> The hike around Loch Ness was the longest hike of this trip and completed in the pouring rain. Although we were miserable to the end, we thoroughly enjoyed the' +
+    '<p> The hike around Loch Ness was the longest hike of this trip and completed in the pouring rain. Although we were miserable at the end, we thoroughly enjoyed the' +
      ' experience. We did not see Nessie.. </p>'+
     '</div>'],
            ['<div id="info_content">' +
