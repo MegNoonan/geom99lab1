@@ -10,22 +10,25 @@
         #map {
           height: 100%;
         }
+          #borders{
+            padding:5%;
+          }
+          top{
+            background-color: gray;
+          }
 
-        /* Optional: Makes the sample page fill the window. */
-        html,
-        body {
-          height: 80%;
-          margin: 0;
-          padding: 0;
-        }
     </style>
   </head>
 <body>
-
+<div id="borders">
+  <div id = "top">
 <h1>Memory Map of my Travels</h1>
-  
+    <p> This memory map shows some of my favourite locations I visited during my travels in 2019. Each icon has a number indicating the order I travelled to each location and can be clicked 
+      for a description of my favourite part about visiting the location. Additionally, my favourite hike is also represented by a white polyline which can be viewed by zooming into 
+      marker number 3, located in Scotland. </p> 
+  </div>
   <div id="map"></div>
-  
+  </div>
 <!-- API script -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
     </script>
