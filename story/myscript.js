@@ -12,21 +12,35 @@ function initMap() {
    map = new google.maps.Map(document.getElementById("map"), mapOptions);
     
      // Adding some hiking trail polylines 
-       const flightPlanCoordinates = [
-    { lat: 37.772, lng: -122.214 },
-    { lat: 21.291, lng: -157.821 },
-    { lat: -18.142, lng: 178.431 },
-    { lat: -27.467, lng: 153.027 },
+       const favouriteHikeCoordinates = [
+{lat: 57.257436, lng: -4.484129},
+{lat: 57.145854, lng: -4.675464},
+{lat: 57.137485, lng: -4.668029},
+{lat: 57.144918, lng: -4.648968},
+{lat: 57.133606, lng: -4.660087},
+{lat: 57.152673, lng: -4.595358},
+{lat: 57.155485, lng: -4.596477},
+{lat: 57.160522, lng: -4.562476},
+{lat: 57.178018, lng: -4.556652},
+{lat: 57.184075, lng: -4.532725},
+{lat: 57.179809, lng: -4.521863},
+{lat: 57.195249, lng: -4.506437},
+{lat: 57.196443, lng: -4.508798},
+{lat: 57.200536, lng: -4.510372},
+{lat: 57.204217, lng: -4.503458},
+{lat: 57.209826, lng: -4.506910},
+{lat: 57.240433, lng: -4.498668},
+{lat: 57.257436, lng: -4.484129}
   ];
-  const flightPath = new google.maps.Polyline({
-    path: flightPlanCoordinates,
+  const hikePath = new google.maps.Polyline({
+    path: favouriteHikeCoordinates,
     geodesic: true,
-    strokeColor: "#FF0000",
+    strokeColor: "#FFF",
     strokeOpacity: 1.0,
     strokeWeight: 2,
   });
 
-  flightPath.setMap(map);
+  hikePath.setMap(map);
      
   //const ireland = { lat: 53.316, lng: -7.698 };
   //var bounds = new google.maps.LatLngBounds();
