@@ -1,5 +1,6 @@
 // Based on the info windows with a max width template 
 // Multiple markers modified from https://www.codexworld.com/google-maps-with-multiple-markers-using-javascript-api/
+// labeling points in order of destination
 const labels = "123456789";
 let labelIndex = 0;
 
@@ -42,7 +43,7 @@ function initMap() {
 
   hikePath.setMap(map);
      
-
+// the 9 points I'm highlighting. Would do more but ran out of time. Wanted to add images if I had time but could not. 
   
   var markers = [
     ['Dingle, Ireland', 53.316, -7.698],
@@ -148,7 +149,7 @@ function initMap() {
 
     // Set zoom level
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-        this.setZoom(5);
+        this.setZoom(4);
         google.maps.event.removeListener(boundsListener);
     });
 }
