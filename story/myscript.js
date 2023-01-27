@@ -147,7 +147,7 @@ function initMap() {
         map.fitBounds(bounds);
     }
 
-    // Set zoom level
+    // Set zoom level to 3 so all points are visible when the map first loads
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
         this.setZoom(3);
         google.maps.event.removeListener(boundsListener);
