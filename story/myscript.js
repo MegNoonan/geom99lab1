@@ -1,6 +1,6 @@
 // Based on the info windows with a max width template 
 // Multiple markers modified from https://www.codexworld.com/google-maps-with-multiple-markers-using-javascript-api/
-const labels = "1234567891011";
+const labels = "123456789";
 let labelIndex = 0;
 
 function initMap() {
@@ -52,10 +52,8 @@ function initMap() {
        ['Brugge, Belgium', 51.198, 3.209],
        ['Warsaw, Poland', 52.234, 21.014],
        ['Bled, Slovenia', 46.366, 14.112],
-       ['Český Krumlov, Czechia', 48.813, 14.316],
        ['Vienna, Austria', 48.206, 16.313],
-       ['Makarska, Croatia', 43.293, 17.020],
-       ['Athens, Greece', 37.999, 23.726],
+       ['Athens, Greece', 37.999, 23.726]
        
        
   ];
@@ -106,23 +104,11 @@ function initMap() {
     '<div id="bodyContent">' +
     '<p> We did a beautiful hike around some water falls. Jenny made an entrance by falling into the pub which to this day still reminds me of Aragorn in LOTR entering Helms Deep</p>'+
     '</div>'],
-             ['<div id="info_content">' +
-    '<h1>Český Krumlov, Czechia</h1>' +
-    '<h3> Length of Stay: 3 days </h3>'+
-    '<div id="bodyContent">' +
-    '<p> This place lives up to its reputation of a "story book" town. Amazing. </p>'+
-    '</div>'],
               ['<div id="info_content">' +
     '<h1>Vienna, Austria</h1>' +
     '<h3> Length of Stay: 3 days </h3>'+
     '<div id="bodyContent">' +
     '<p> An amazing hike once again! Such great views! I got over my fear (temporarily) of heights to take the gondola, so worth it </p>'+
-    '</div>'],
-                     ['<div id="info_content">' +
-    '<h1>Makarska, Croatia</h1>' +
-    '<h3> Length of Stay: 5 days </h3>'+
-    '<div id="bodyContent">' +
-    '<p> We found a little hidden beach...</p>'+
     '</div>'],
           ['<div id="info_content">' +
     '<h1>Athens, Greece</h1>' +
@@ -162,7 +148,7 @@ function initMap() {
 
     // Set zoom level
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-        this.setZoom(3);
+        this.setZoom(5);
         google.maps.event.removeListener(boundsListener);
     });
 }
